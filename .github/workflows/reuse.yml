@@ -6,7 +6,7 @@ jobs:
   call-workflow:
     uses: ./.github/workflows/reusable.yml
     with:
-      who-to-greet: ${{ gitgithub.actor }}
+      who-to-greet: ${{ github.actor }}
 
   use-output:
     runs-on: ubuntu-latest
